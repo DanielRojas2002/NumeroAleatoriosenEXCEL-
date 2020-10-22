@@ -143,3 +143,17 @@ class datos:
             libro.save(nombref)
             print("EXITOSO")
             print("El excel esta en el directorio donde esta guardado el codigo :)")
+
+
+
+opcion1=1
+while opcion1==1:
+    cuantos=int(input("Dime cuantos numero aleatorios quieres en tu Excel : "))
+    rango=int(input("Dime el ultimo numero permitido de numero aleatorios : "))
+    nombre=input("Como quieres que se llame el Excel : ")
+    objeto=datos(cuantos,rango,nombre)
+    objeto.creacion()
+    print("*"*50)
+    print("1=SI\n2=No")
+    opcion1=int(input("Deseas seguir creando excel : "))
+    print("*"*50)

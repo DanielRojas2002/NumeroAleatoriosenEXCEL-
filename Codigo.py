@@ -16,9 +16,11 @@ class datos:
         
         for renglon in range(2,self.__cuantos+2):
             hoja.cell(row=renglon,column=2).value= random.randrange(self.__rango)
-            
+
+        print("*"*30)   
         print("Menu de operaciones ")
         FUNCION="=CONTAR"
+        print("*"*30)
         print("1=Sumar\n2=Promedio\n3=ValorMaximo\n4=ValorMinimo\n5=TODAS\n6=No quiero ninguna operacion extra")
         opcion=int(input(": "))
         if opcion==1:
